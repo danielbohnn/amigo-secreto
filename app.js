@@ -1,4 +1,4 @@
-listaAmigos = []
+arrayAmigos = []
 cont = 0
 
 function adicionar() {
@@ -8,12 +8,12 @@ function adicionar() {
     if (!adicionarAmigo) {
         alert("O campo está vazio")
         document.getElementById("adicionar-amigo").focus()
-    } else if (listaAmigos.includes(adicionarAmigo)) {
+    } else if (arrayAmigos.includes(adicionarAmigo)) {
         alert(adicionarAmigo + " já está dentro da lista de amigos")
         document.getElementById("adicionar-amigo").value = ''
         document.getElementById("adicionar-amigo").focus()
     } else {
-        listaAmigos.push(adicionarAmigo)
+        arrayAmigos.push(adicionarAmigo)
         cont++
         listaAmigo.innerHTML = listaAmigo.innerHTML + "<div id='div-" + cont + "'>" + "<button id='remover-" + cont + "' onclick='remover(" + cont + ")'> X </button>" + " " + adicionarAmigo + "</div>"
         document.getElementById("adicionar-amigo").value = ''
@@ -24,9 +24,9 @@ function adicionar() {
 function remover(id) {
     let div = document.getElementById("div-" + id)
 
-        listaAmigos.splice((id - 1), 1)
+    arrayAmigos.splice((id - 1), 1)
 
-    alert(listaAmigos)
+    alert(arrayAmigos)
 
     var pa = div ? div.parentNode : null;
 
@@ -37,14 +37,14 @@ function remover(id) {
 }
 
 function sortear() {
-    embaralha(listaAmigos)
+    embaralha(arrayAmigos)
     let sorteados = document.getElementById('amigo-presente')
-    let ultimoLista = listaAmigos[listaAmigos.length - 1]
+    let ultimoLista = arrayAmigos[arrayAmigos.length - 1]
 
-    if (listaAmigos.length >= 4) {
-        sorteados.innerHTML = ultimoLista + "->" + listaAmigos[0] + "</br>"
+    if (arrayAmigos.length >= 4) {
+        sorteados.innerHTML = ultimoLista + "->" + arrayAmigos[0] + "</br>"
         for (let i = 0; i < (cont - 1); i++) {
-            sorteados.innerHTML = sorteados.innerHTML + listaAmigos[0 + i] + "->" + listaAmigos[1 + i] + "</br>"
+            sorteados.innerHTML = sorteados.innerHTML + arrayAmigos[0 + i] + "->" + arrayAmigos[1 + i] + "</br>"
         }
     } else {
         alert("Adicione pelo menos 4 amigos")
@@ -53,7 +53,7 @@ function sortear() {
 
 function reiniciar() {
     cont = 0
-    listaAmigos = []
+    arrayAmigos = []
     document.getElementById("lista-amigo").innerHTML = ''
     document.getElementById("amigo-presente").innerHTML = ''
 
