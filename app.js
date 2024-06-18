@@ -15,7 +15,7 @@ function adicionar() {
     } else {
         arrayAmigos.push(adicionarAmigo)
         cont++
-        listaAmigo.innerHTML = listaAmigo.innerHTML + "<div id='div-" + cont + "'>" + "<button id='remover-" + cont + "' onclick='remover(" + cont + ")'> X </button>" + " " + adicionarAmigo + "</div>"
+        listaAmigo.innerHTML = listaAmigo.innerHTML + "<div id='div-" + cont + "'>" + "<button id='remover-" + cont + "' onclick='remover(" + cont + ")'>X</button>" + " " + "<b id='value-"+ cont +'>" + adicionarAmigo + "</b></div>"
         document.getElementById("adicionar-amigo").value = ''
         document.getElementById("adicionar-amigo").focus()
     }
@@ -23,8 +23,9 @@ function adicionar() {
 
 function remover(id) {
     let div = document.getElementById("div-" + id)
-
-    arrayAmigos.splice((id - 1), 1)
+    let divValor = document.getElementById('value-' + id).innerText
+    
+    alert(divValor)
 
     alert(arrayAmigos)
 
