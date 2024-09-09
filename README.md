@@ -1,11 +1,11 @@
 ---
 
-# 👥 AMIGO SECRETO
+# AMIGO SECRETO
 
 Este é um aplicativo web simples que gera aleatoriedade para sorteios de **Amigo Secreto**. O usuário pode adicionar os participantes e o sistema automaticamente realiza o sorteio, garantindo que cada pessoa receba um "amigo secreto" diferente.
 Desenvolvido por: **Daniel Dick Bohn** (back-end) e por **Caio Ramos** (front-end)
 
-## 📙 Features
+## Features
 
 - Adição de participantes de forma dinâmica.
 - Geração aleatória de pares de amigo secreto.
@@ -13,7 +13,7 @@ Desenvolvido por: **Daniel Dick Bohn** (back-end) e por **Caio Ramos** (front-en
 - Interface simples e intuitiva.
 - Sistema WebResponsivo
 
-## 👨‍💻 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML/CSS/JavaScript/SweetAlert2**: Para a estrutura, estilo e interatividade.
 - **JavaScript**: Back-end para lógica de sorteio.
