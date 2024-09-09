@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #FFF8E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+li{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#main{
+    background-color: #A1C9D5;
+    border: 5px solid #F7F7F7;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1), 0 8px 22px rgba(0, 0, 0, 0.1);
+
+    border-radius: 30px;
+    height: 49.75rem;
+    width: 30%;
+    
+}
+h2{
+    line-height: 30px;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    margin: 3% 0;
+
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+
+
+#container__listaAmigos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0;
+    height: 100%;
+    
+
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    width: 100%;
+    height: 30%;
+    margin: 10px;
+
+}
+.inputs input{
+    background-color: #57707731;
+    border: 2px solid #30393b;
+    padding: 6px;
+    width: 48%;
+    border-radius: 20px;
+}
+.inputs input::placeholder{
+    text-align: center;
+    color: #0000005e;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+}
+.container__botoes{
+    position: sticky;
+    z-index: 2;
+    height: 50%;
+    margin-top: 10px;
+
+
+}
+.container__botoes button{
+    border: 2px solid #30393b;
+    background-color: #577077;
+    font-weight: 600;
+    padding: 6px;
+    width: 80px;
+    border-radius: 20px;
+    font-family: "Raleway", sans-serif;
+}
+.container__botoes button:hover{
+    background-color: #57707793;
+    
+
+}
+.lista-amigo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    height: 34%;
+    width: 100%;
+}
+button{
+    background-color: #A1C9D5;
+    cursor: pointer;
+}
+.img-delete{
+    
+    text-align: center;
+    height: 12px;
+    width: 12px;
+}
+.text-amigo{
+    font-size: 18px;
+    color: #4D4D4D;
+}
+.lista-amigo-func{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid #30393b;
+    overflow: auto;
+    overflow-inline: 8px;
+    background-color: #577077;
+}
+.lista-amigo-func::-webkit-scrollbar{
+    border-radius: 10px;
+    background-color: #405c63;
+}
+.lista-amigo-func::-webkit-scrollbar-thumb {
+    background-color: #57707731; 
+    border-radius: 6px;
+    border: 2px solid #30393b; 
+}
+.amigo-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px;
+}
+.lista-sorteados{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+.amigo-sorteado-input{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 2px solid #30393b;
+    overflow: auto;
+    overflow-inline: 10px;
+    background-color: #577077;
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+}
+.amigo-sorteado-input::-webkit-scrollbar{
+    border-radius: 10px;
+    background-color: #405c63;
+}
+.amigo-sorteado-input::-webkit-scrollbar-thumb {
+    background-color: #57707731; 
+    border-radius: 6px;
+    border: 2px solid #30393b; 
+}
+img{
+    width:175px;
+    height: 175px;
+}
+.img-delete:hover{
+    cursor: pointer;
+}
+.img-seta{
+    width: 12px;
+    height: 12px;
+}

@@ -4,22 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Amigo Secreto</title>
+    <link rel="icon" href="img/amigo.ico" type="icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <input type="text" id="adicionar-amigo">
-    <button onclick="adicionar()">adicionar</button>
-    <button onclick='sortear()'>sortear</button>
-    <button onclick="reiniciar()">reiniciar</button>
-    <br>
-    <br>
-    <h1>Lista de Amigos</h1>
-    <p id="lista-amigo"></p>
-    <br>
-    <br>
-    <h1>Sorteados</h1>
-    <p id="amigo-presente"></p>
+    <main id="main">
+        <div id="container__listaAmigos">
+            <img src="img/amigo.png" alt="imagem de amigos abraçados">
+            <div class="lista-amigo">
+                <h2>Lista de Amigos</h2>
+                <span id="lista-amigo" class="lista-amigo-func"><p style="display: block;" id="add-amigo">Adicione um amigo na lista de amigos</p></span>
+                <div class="inputs">
+                    <input type="text" id="adicionar-amigo" placeholder="Insira um amigo">
+                    <div class="container__botoes">
+                        <button onclick="adicionar()">adicionar</button>
+                        <button onclick='sortear()'>sortear</button>
+                        <button onclick="reiniciar()">reiniciar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="lista-sorteados" style="display: flex;">
+                <h2>Amigos Sorteados</h2>
+                <ul id="amigo-presente" class="amigo-sorteado-input">
+                    <p style="display: block;" id="amg-adds">Quando a lista for sorteada os amigos apareceram aqui</p>
+                </ul>
+                    
+            </div>
+
+        </div>
+    </main>
 
     <script src="app.js" defer></script>
 </body>
