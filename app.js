@@ -9,7 +9,10 @@ function adicionar() {
 
 
     if (!adicionarAmigo) {
-        alert("O campo está vazio")
+        Swal.fire({
+            icon: "error",
+            text: "Campo está vázio."
+          });
         document.getElementById("adicionar-amigo").focus()
     } else if (arrayAmigos.includes(adicionarAmigo)) {
         alert(adicionarAmigo + " já está dentro da lista de amigos")
@@ -52,11 +55,21 @@ function sortear() {
             sorteados.innerHTML = sorteados.innerHTML + "<li>"+  arrayAmigos[0 + i] + " <img src='img/seta.png' class='img-seta'> " + arrayAmigos[1 + i] + "</li>"
         }
     } else {
-        alert("Adicione pelo menos 4 amigos")
+        Swal.fire({
+            icon: "error",
+            text: "Adicione pelo menos 4 amigos.",
+          });
     }
 }
 
 function reiniciar() {
+    if(arrayAmigos.length == 0){
+        Swal.fire({
+            icon: "error",
+            text: "Lista de amigos já está vazia.",
+          });
+    }
+
     cont = 0
     arrayAmigos = []
     document.getElementById("lista-amigo").innerHTML = '<p style="display: block;" id="add-amigo">Adicione um amigo na lista de amigos</p>'
